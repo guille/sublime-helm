@@ -1,0 +1,4 @@
+{
+	"target": "helm_package_build",
+	"selector": "source.helm, source.yaml.helmvalues",
+}
