@@ -1,0 +1,4 @@
+{
+	"target": "helm_lint_build",
+	"selector": "source.helm, source.yaml.helmvalues",
+}

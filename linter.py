@@ -5,7 +5,7 @@ import sublime_plugin
 from .shared import upglob
 
 
-class HelmPackageBuildCommand(sublime_plugin.WindowCommand):
+class HelmLintBuildCommand(sublime_plugin.WindowCommand):
     def is_enabled(self):
         return True
 
@@ -19,7 +19,7 @@ class HelmPackageBuildCommand(sublime_plugin.WindowCommand):
             print(pkg_root)
             self.window.run_command(
                 "exec",
-                {"cmd": ["helm", "package", str(pkg_root)], "working_dir": working_dir},
+                {"cmd": ["helm", "lint", str(pkg_root)], "working_dir": working_dir},
             )
             return
         print("Not found")
