@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
 # See http://www.sublimetext.com/docs/3/syntax.html
-scope: source.yaml
+scope: source.yaml.embeds
 version: 2
 hidden: true
 extends: Packages/YAML/YAML.sublime-syntax
